@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>EcoCycle Buea</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="home">
+<div class="topbar">
+    <div class="container nav">
+        <a class="brand" href="index.html">
+            <span class="logo">♻</span>
+            <span>EcoCycle Buea<small>Smart Waste + Recycling</small></span>
+        </a>
+        <div class="navlinks">
+            <a href="index.html" data-nav="home" data-i18n="home">Home</a>
+            <a href="index.html#features" data-i18n="features">Features</a>
+            <a href="index.html#pricing" data-i18n="pricing">Pricing</a>
+            <a href="household.html" data-nav="dashboards" data-i18n="dashboards">Dashboards</a>
+            <a href="live-map.html" data-nav="map">Live Map</a>
+        </div>
+        <div class="actions">
+            <select class="language" id="languageSelect">
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
+                <option value="pg">PG</option>
+            </select>
+
+            <button class="btn ghost" id="themeBtn">🌙</button>
+            <a class="btn" href="login.html" data-i18n="login">Login</a>
+            <a class="btn" href="signup.html" data-i18n="signup">Signup</a>
+            <a class="btn primary" href="request-pickup.html" data-i18n="requestPickup">Request Pickup</a>
+        </div>
+    </div>
+</div>
+<main>
+    <section class="hero">
+        <div class="container grid hero-grid">
+            <div>
+                <span class="kicker" data-i18n="heroKicker">Buea, Cameroon · MVP Demo</span>
+                <h1 data-i18n="heroTitle">Cleaner Communities. Smarter Collection. Greener Future.</h1>
+                <p class="lead" data-i18n="heroLead">EcoCycle Buea connects households, businesses, collectors,
+                    recyclers and agencies through real-time pickup requests, smart bin alerts, EcoCoins rewards and
+                    data-rich environmental dashboards.</p>
+
+                <div class="actions" style="margin-top:24px">
+                    <a class="btn primary" href="household.html" data-i18n="launchDashboard">Launch Dashboard</a>
+                    <a class="btn accent" href="request-pickup.html" data-i18n="createPickup">Create Pickup</a>
+                    <a class="btn" href="#features" data-i18n="howItWorks">See How It Works</a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="mock-phone">
+                    <div class="mock-screen">
+                        <b>Live Collection Map</b>
+                        <span class="pill" style="float:right">Molly</span>
+                        <div class="map" style="margin-top:12px">
+                            <span class="road"
+                                  style="width:420px;height:18px;left:-60px;top:78px;transform:rotate(18deg)"></span>
+                            <span class="road"
+                                  style="width:360px;height:14px;left:80px;top:155px;transform:rotate(-28deg)"></span>
+                            <span class="road"
+                                  style="width:18px;height:310px;left:175px;top:-30px;transform:rotate(8deg)"></span>
+                            <span class="pin" style="left:70px;top:85px"></span>
+                            <span class="pin blue" style="left:220px;top:125px"></span>
+                            <span class="pin orange" style="left:150px;top:45px"></span>
+                        </div>
+
+                        <div class="statbar">
+                            <div class="mini">
+                                <b>43</b><span>Pickups</span>
+                            </div>
+                            <div class="mini">
+                                <b>2.8t</b><span>Diverted</span>
+                            </div>
+                            <div class="mini">
+                                <b>12k</b><span>EcoCoins</span>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-top:12px">
+                            <b>Smart Bin Alert</b>
+                            <p class="muted" style="margin:6px 0">Checkpoint bin is 86% full. Auto-request
+                                generated.</p>
+                            <div class="progress">
+                                <span style="width:86%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="problem">
+        <div class="container">
+            <div class="cards">
+                <div class="card earth-accent">
+                    <h3>Problem Statement</h3>
+                    <p class="muted">Buea neighborhoods face irregular waste collection, poor recycling separation,
+                        overflowing bins and limited municipal visibility into hotspots.</p>
+                </div>
+                <div class="card">
+                    <h3>How It Works</h3>
+                    <p class="muted">1. Users request pickup. 2. Collectors accept nearby jobs. 3. OTP/photo confirms
+                        completion. 4. Recyclables enter the marketplace. 5. EcoCoins reward participation.</p>
+                </div>
+                <div class="card">
+                    <h3>Environmental Impact</h3>
+                    <p class="muted">Track landfill diversion, CO₂ reduction, recycling rates, jobs created and
+                        neighborhood-level collection trends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="features">
+        <div class="container">
+            <h2 data-i18n="roleExperiences">One platform, six role-based experiences.</h2>
+            <p class="lead" data-i18n="roleLead">Separate pages now handle each dashboard, with real language switching
+                and a direct Node.js API backend scaffold.</p>
+            <div class="cards">
+                <a class="card" href="household.html">
+                    <div class="icon">🏠</div>
+                    <h3 data-i18n="household">Household</h3>
+                    <p class="muted">Request pickups, track collectors and earn EcoCoins.</p>
+                </a>
+                <a class="card" href="business.html">
+                    <div class="icon">🏢</div>
+                    <h3 data-i18n="business">Business</h3>
+                    <p class="muted">Manage locations, invoices and waste analytics.</p>
+                </a>
+                <a class="card" href="collector.html">
+                    <div class="icon">🚛</div>
+                    <h3 data-i18n="collector">Collector</h3>
+                    <p class="muted">Accept jobs, navigate routes and complete by OTP.</p>
+                </a>
+                <a class="card" href="recycler.html">
+                    <div class="icon">🏭</div>
+                    <h3 data-i18n="recycler">Recycler</h3>
+                    <p class="muted">Browse materials and place bids.</p>
+                </a>
+                <a class="card" href="government.html">
+                    <div class="icon">🏛️</div>
+                    <h3 data-i18n="government">Government</h3>
+                    <p class="muted">Monitor hotspots and environmental metrics.</p>
+                </a>
+                <a class="card" href="admin.html">
+                    <div class="icon">⚙️</div>
+                    <h3 data-i18n="admin">Admin</h3>
+                    <p class="muted">Manage users, pricing, rewards and disputes.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="pricing">
+        <div class="container"><h2 data-i18n="pricingTitle">Pricing model</h2>
+            <div class="cards">
+                <div class="card"><span class="pill" data-i18n="household">Household</span>
+                    <p class="price">1,500 XAF</p>
+                    <p class="muted">Standard pickup with EcoCoins rewards.</p></div>
+                <div class="card"><span class="pill" data-i18n="business">Business</span>
+                    <p class="price">Custom</p>
+                    <p class="muted">Recurring collection and invoices.</p></div>
+                <div class="card earth-accent"><span class="pill" data-i18n="recycler">Recycler</span>
+                    <p class="price">Market</p>
+                    <p class="muted">Bid-based material procurement.</p></div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="faq">
+        <div class="container"><h2>FAQ</h2>
+            <div class="cards">
+                <div class="card"><h3>Can households earn rewards?</h3>
+                    <p class="muted">Yes. EcoCoins are awarded for recycling, successful pickups, consistency and
+                        referrals.</p></div>
+                <div class="card"><h3>How are collectors verified?</h3>
+                    <p class="muted">Collector signup captures ID verification, vehicle information and collection
+                        license number.</p></div>
+                <div class="card"><h3>Does it support smart bins?</h3>
+                    <p class="muted">Yes. Bins above 80% show alerts and can auto-generate pickup requests.</p></div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="testimonials">
+        <div class="container"><h2>Testimonials</h2>
+            <div class="cards">
+                <div class="card"><p>“EcoCycle makes pickup requests easy for students around Molyko.”</p><b>— Household
+                    user</b></div>
+                <div class="card"><p>“The recurring schedule and invoices are exactly what local businesses need.”</p>
+                    <b>— Business owner</b></div>
+                <div class="card"><p>“The job marketplace gives collectors a clearer way to find work.”</p><b>— Waste
+                    collector</b></div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="banner"><h2 data-i18n="backendNote">Direct Node.js backend: run npm start, then API endpoints
+                serve pickups, bins, materials, notifications and analytics.</h2></div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">EcoCycle Buea · Investor-demo-quality MVP</div>
+</footer>
+<div id="toast" class="toast"></div>
+<script src="assets/app.js"></script>
+</body>
+</html>

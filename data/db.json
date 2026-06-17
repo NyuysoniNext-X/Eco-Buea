@@ -1,0 +1,224 @@
+{
+  "users": [
+    {
+      "id": "USR-DEMO",
+      "name": "Demo User",
+      "email": "demo@ecocycle.cm",
+      "phone": "+237 600 000 000",
+      "password": "password123",
+      "role": "household",
+      "neighborhood": "Molyko",
+      "ecoCoinsBalance": 1240,
+      "verified": true
+    },
+    {
+      "id": "USR-001",
+      "name": "Tanyi Grace",
+      "role": "household",
+      "neighborhood": "Molyko",
+      "ecoCoinsBalance": 1240
+    },
+    {
+      "id": "USR-002",
+      "name": "Buea Bakery",
+      "role": "business",
+      "neighborhood": "Great Soppo",
+      "ecoCoinsBalance": 620
+    },
+    {
+      "id": "USR-003",
+      "name": "Moki Waste Services",
+      "role": "collector",
+      "neighborhood": "Checkpoint",
+      "rating": 4.8
+    }
+  ],
+  "pickups": [
+    {
+      "id": "PU-1041",
+      "requester": "Tanyi Grace",
+      "wasteType": "Plastic",
+      "quantityKg": 18,
+      "neighborhood": "Molyko",
+      "address": "University Junction",
+      "status": "pending",
+      "ecoCoinsAwarded": 0,
+      "location": {
+        "lat": 4.1592721873478204,
+        "lng": 9.292145306556638
+      }
+    },
+    {
+      "id": "PU-1040",
+      "requester": "Buea Bakery",
+      "wasteType": "Organic",
+      "quantityKg": 55,
+      "neighborhood": "Great Soppo",
+      "address": "Main Market Road",
+      "status": "accepted",
+      "ecoCoinsAwarded": 120,
+      "location": {
+        "lat": 4.146946018661449,
+        "lng": 9.267982779726513
+      }
+    },
+    {
+      "id": "PU-1039",
+      "requester": "Atem Linda",
+      "wasteType": "E-Waste",
+      "quantityKg": 7,
+      "neighborhood": "Bonduma",
+      "address": "Bonduma Gate",
+      "status": "completed",
+      "ecoCoinsAwarded": 210,
+      "location": {
+        "lat": 4.146622652530248,
+        "lng": 9.277812653007194
+      }
+    }
+  ],
+  "smartBins": [
+    {
+      "id": "BIN-001",
+      "neighborhood": "Molyko",
+      "fillPercentage": 62,
+      "weightKg": 42,
+      "type": "Plastic",
+      "location": {
+        "lat": 4.157878130996747,
+        "lng": 9.288169685313912
+      }
+    },
+    {
+      "id": "BIN-002",
+      "neighborhood": "Checkpoint",
+      "fillPercentage": 86,
+      "weightKg": 71,
+      "type": "Mixed",
+      "location": {
+        "lat": 4.151008024172476,
+        "lng": 9.240656989486508
+      }
+    },
+    {
+      "id": "BIN-003",
+      "neighborhood": "Buea Town",
+      "fillPercentage": 37,
+      "weightKg": 28,
+      "type": "Organic",
+      "location": {
+        "lat": 4.152852182935244,
+        "lng": 9.231352480697222
+      }
+    },
+    {
+      "id": "BIN-004",
+      "neighborhood": "Small Soppo",
+      "fillPercentage": 94,
+      "weightKg": 83,
+      "type": "Glass",
+      "location": {
+        "lat": 4.155135067601542,
+        "lng": 9.270991351377859
+      }
+    }
+  ],
+  "materials": [
+    {
+      "id": "MAT-22",
+      "type": "Plastic PET",
+      "quantityKg": 320,
+      "grade": "A",
+      "price": "85 XAF/kg"
+    },
+    {
+      "id": "MAT-23",
+      "type": "Aluminium Cans",
+      "quantityKg": 91,
+      "grade": "B",
+      "price": "420 XAF/kg"
+    },
+    {
+      "id": "MAT-24",
+      "type": "Paper/Cardboard",
+      "quantityKg": 510,
+      "grade": "A",
+      "price": "55 XAF/kg"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "NT-001",
+      "title": "Pickup Created",
+      "message": "A new pickup request was created.",
+      "channel": "email",
+      "read": false
+    },
+    {
+      "id": "NT-002",
+      "title": "Smart Bin Alert",
+      "message": "Checkpoint bin is above 80% full.",
+      "channel": "in_app",
+      "read": false
+    }
+  ],
+  "sessions": [],
+  "uploads": [],
+  "invoices": [
+    {
+      "id": "INV-1001",
+      "pickupId": "PU-1040",
+      "businessName": "Buea Bakery",
+      "amount": 4125,
+      "currency": "XAF",
+      "status": "unpaid",
+      "lineItems": [
+        {
+          "description": "Organic waste collection",
+          "quantity": 55,
+          "unitPrice": 75,
+          "total": 4125
+        }
+      ],
+      "createdAt": "2026-06-17T10:00:00.000Z"
+    }
+  ],
+  "transactions": [],
+  "reviews": [],
+  "reports": [],
+  "collectors": [
+    {
+      "id": "COL-001",
+      "name": "Moki Waste Services",
+      "status": "available",
+      "vehicle": "Truck",
+      "location": {
+        "lat": 4.1561,
+        "lng": 9.2751
+      },
+      "rating": 4.8
+    },
+    {
+      "id": "COL-002",
+      "name": "Green Riders Buea",
+      "status": "on_job",
+      "vehicle": "Tricycle",
+      "location": {
+        "lat": 4.1499,
+        "lng": 9.2534
+      },
+      "rating": 4.6
+    },
+    {
+      "id": "COL-003",
+      "name": "Soppo Clean Team",
+      "status": "available",
+      "vehicle": "Bike",
+      "location": {
+        "lat": 4.1459,
+        "lng": 9.2671
+      },
+      "rating": 4.9
+    }
+  ]
+}
